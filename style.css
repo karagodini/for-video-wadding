@@ -139,3 +139,89 @@ main {
     background: #d4d4d4;
     margin: 10px 5px 0;
 }
+
+.container-form {
+    background: #fff;
+    max-width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    text-align: center;
+}
+
+.container-form .desc {
+    font-size: 16px;
+}
+
+.container-form form {
+
+}
+
+.container-form form .title {
+    font-weight: 700;
+    margin-left: 100px;
+}
+
+.container-form form p {
+    margin-left: 130px;
+    text-align: left;
+}
+
+.container-form form .submit {
+    text-align: center;
+}
+
+.schedule {
+    background: rgb(255, 252, 233);
+}
+
+.schedule .container {
+    max-width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    text-align: center;
+}
+
+.schedule .container .title-block {
+    font-family: Aquarelle;
+    font-size: 34px;
+}
+
+.schedule .container .contents {
+    display: flex;
+    text-align: left;
+    justify-content: center;
+    margin-bottom: 70px;
+}
+
+.schedule .container .contents .content {
+    width: 60%;
+    margin-left: 110px;
+}
+
+.schedule .container .contents .content p {
+    margin: 0;
+}
+
+.schedule .container .contents .content .desc {
+    color: #808080;
+}
+
+.schedule .container .contents .content .text {
+    font-family: 'Aquarelle';
+    font-size: 15px;
+    margin-top: 20px;
+    margin-left: -30px;
+    width: 90%;
+}
+
+footer iframe {
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    text-align: center;
+    font-size: 10px;
+}
