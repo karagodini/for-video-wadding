@@ -26,7 +26,7 @@
                 <p class="year">2024</p>
             </div>
             <div class="time">
-                <p>11:00</p>
+                <p>15:00</p>
             </div>
         </div>
         <div class="timer"></div>
@@ -37,7 +37,7 @@
                 <div class="dear-guest">
                     <p class="title">Дорогой <br> Гость</p>
                     <p class="desc">Мы рады сообщить Вам, что   28.09.2024  состоится самое главное торжество в нашей жизни - день нашей свадьбы!<br>Приглашаем Вас разделить с нами радость этого незабываемого дня.</p>
-                    <p class="date">28.09.2024 в 11:00</p>
+                    <p class="date">28.09.2024 в 15:00</p>
                 </div>
                 <div class="img">
                     <img src="/images/bg2.jpg" alt="">
@@ -50,6 +50,8 @@
                 <div class="gifts">
                     <p class="title">Пожелания по подаркам</p>
                     <p class="desc">Ваше присутствие в день нашей свадьбы - самый значимый подарок для нас!</p>
+                    <p class="desc">Если вы хотите сделать нам комплимент, замените букет бутылочкой вина, которое мы откроем на ближайшем совместном празднике.</p>
+                    <p class="desc">Если же ваше сердце жаждет преподнести именно цветы, то просим сделать выбор в пользу одной белой розы. В итоге у нас получится один роскошный букет.</p>
                 </div>
                 <div class="confirmation">
                     <p class="title">Подтверждение</p>
@@ -73,12 +75,27 @@
         <p class="desc">Пожалуйста, ответьте на вопросы, которые для вас подготовили Жених и Невеста</p>
         <form action="">
             <p class="title">Какой алкоголь вы предпочитаете?</p>
-            <p><input type="checkbox" name="" id="">Виски</p>
-            <p><input type="checkbox" name="" id="">Водка</p>
-            <p><input type="checkbox" name="" id="">Коньяк</p>
-            <p><input type="checkbox" name="" id="">Вино</p>
-            <p><input type="checkbox" name="" id="">Шампанское</p>
-            <input class="submit" type="submit" value="Подтвердить">
+            <p>
+                <input type="checkbox" class="custom-checkbox" id="visky" name="visky" value="yes">
+                <label for="visky">Виски</label>
+            </p>
+            <p>
+                <input type="checkbox" class="custom-checkbox" id="vodka" name="vodka" value="yes">
+                <label for="vodka">Водка</label>
+            </p>
+            <p>
+                <input type="checkbox" class="custom-checkbox" id="konyak" name="konyak" value="yes">
+                <label for="konyak">Коньяк</label>
+            </p>
+            <p>
+                <input type="checkbox" class="custom-checkbox" id="vino" name="vino" value="yes">
+                <label for="vino">Вино</label>
+            </p>
+            <p>
+                <input type="checkbox" class="custom-checkbox" id="shampanskoe" name="shampanskoe" value="yes">
+                <label for="shampanskoe">Шампанское</label>
+            </p>
+            <button class="submit" type="submit" value="Подтвердить">Подтвердить</button>
         </form>
     </section>
     <section class="schedule">
