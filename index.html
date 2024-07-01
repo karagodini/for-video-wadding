@@ -8,9 +8,9 @@
 </head>
 <body>
     <header>
-        <nav></nav>
         <div class="names">
             <p class="name">Станислав</p>
+            <p class="and">and</p>
             <p>Мария</p>
         </div>
         <div class="desc">
@@ -29,19 +29,40 @@
                 <p>15:00</p>
             </div>
         </div>
-        <div class="timer"></div>
+        <div class="timer">
+            <div>
+                <span id="weeks"></span>
+                недель
+            </div>
+            <div>
+                <span id="days"></span>
+                дней
+            </div>
+            <div>
+                <span id="hours"></span>
+                часов
+            </div>
+            <div>
+                <span id="minutes"></span>
+                минут
+            </div>
+            <div>
+                <span id="seconds"></span>
+                секунд
+            </div>
+        </div>
     </header>
     <main>
         <section class="invitation">
             <div class="container">
                 <div class="dear-guest">
-                    <p class="title">Дорогой <br> Гость</p>
-                    <p class="desc">Мы рады сообщить Вам, что   28.09.2024  состоится самое главное торжество в нашей жизни - день нашей свадьбы!<br>Приглашаем Вас разделить с нами радость этого незабываемого дня.</p>
-                    <p class="date">28.09.2024 в 15:00</p>
+                    <p class="title">Дорогие наши <br> родные и друзья!</p>
+                    <p class="desc">Вместе любить, вместе мечтать, вместе смотреть в одну сторону и наслаждаться каждым моментом. Чувствовать родственную душу и просто кайфовать от этого..</p>
+                    <p class="date">Добро пожаловать на наш знаменательный день<br>28.09.2024</p>
                 </div>
                 <div class="img">
-                    <img src="/images/bg2.jpg" alt="">
-                    <p class="desc">Там, где посеяна любовь, растёт радость!</p>
+                    <img src="/images/bg_.png" alt="">
+                    <p class="desc">Вместе мы сделаем этот день прекрасным!</p>
                 </div>
                 <div class="menu">
                     <p class="title">Меню</p>
@@ -57,23 +78,36 @@
                     <p class="title">Подтверждение</p>
                     <p class="desc">Пожалуйста подтвердите свое присутствие до 11.08.2024</p>
                 </div>
-                <p class="title">Ждем Вас!</p>
-                <div class="choosing-gifts">
-                    <p class="desc">Будем благодарны, если при выборе нарядов на наше торжество вы придержитесь следующей палитры</p>
-                    <div class="colors">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                    </div>
+                <div class="dess-kod">
+                    <p class="title">Дресс-код</p>
+                    <p class="desc">На нашей свадьбе ограничений по дресс-коду нет.</p>
+                    <p class="desc">Дорогие девушки, будем признательны, если в белом будет только невеста.</p>
+                    <p class="desc">Надевайте всё самое нарядное и красивое! <br>Для нас главное - ваше присутствие и хорошее настроение!</p>
                 </div>
+                <p class="title">Ждем Вас!</p>
             </div>
         </section>
     </main>
     <section class="container-form">
         <p class="desc">Пожалуйста, ответьте на вопросы, которые для вас подготовили Жених и Невеста</p>
         <form action="">
+            <p class="title">Ваша фамилия:</p>
+            <p>
+                <input type="text" name="lastname" id="lastname">
+            </p>
+            <p class="title">Ваше имя: <br><span>Если вы придете со своей парой или семьей, то укажите все имена</span></p>
+            <p>
+                <input type="text" name="firstname" id="firstname">
+            </p>
+            <p class="title">Присутствие:</p>
+            <p>
+                <input type="checkbox" class="custom-checkbox" id="yes" name="yes" value="yes">
+                <label for="yes">Я (мы) с удовольствием приду (придем)</label>
+            </p>
+            <p>
+                <input type="checkbox" class="custom-checkbox" id="no" name="no" value="yes">
+                <label for="no">К сожалению, не смогу (не сможем) присутствовать</label>
+            </p>
             <p class="title">Какой алкоголь вы предпочитаете?</p>
             <p>
                 <input type="checkbox" class="custom-checkbox" id="visky" name="visky" value="yes">
@@ -121,11 +155,23 @@
                     <p class="text">Именно здесь мы отметим наш незабываемый день.</p>
                 </div>
             </div>
+            <div class="contents">
+                <div class="date">
+                    <p>17:30<br>28.09.2024</p>
+                </div>
+                <div class="content">
+                    <p class="title">Начало банкета</p>
+                    <p class="desc">Банкетный зал "Niagara Loft"</p>
+                </div>
+            </div>
         </div>
     </section>
     <footer>
         <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A8282d6ddf8e85614aa7b65923a4e59e40b78c1487962c4f72478ad12569fbf33&amp;width=1000&amp;height=500&amp;lang=ru_RU&amp;scroll=true"></script>
         <p class="copyright">©️2024</p>
     </footer>
+
+    <script src="/index.js"></script>
+
 </body>
 </html>

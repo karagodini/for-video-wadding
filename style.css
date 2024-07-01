@@ -5,6 +5,11 @@
     src: url("/src/Aquarelle.ttf");
 }
 
+@font-face {
+    font-family: "Thedream";
+    src: url("/src/the-dream-regular.ttf");
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -12,7 +17,7 @@ body {
 }
 
 header {
-    background: url(/images/header-back.png);
+    background: url(/images/bg_h.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: 50%;
@@ -31,6 +36,10 @@ header .names .name {
     padding-top: 180px;
 }
 
+header .names .and {
+    font-family: Thedream;
+}
+
 header .desc {
     margin-top: 30px;
 }
@@ -46,6 +55,7 @@ header .date {
     justify-content: center;
     align-items: center;
     margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 header .date p {
@@ -75,6 +85,23 @@ header .date .days .day {
 
 header .date .days .year {
     font-size: 14px;
+}
+
+header .timer {
+    display: flex;
+    justify-content: center;
+}
+
+header .timer div {
+    display: flex;
+    flex-direction: column;
+    font-family: Aquarelle;
+    margin: 0 10px;
+    font-size: 10px;
+}
+
+header .timer div span {
+    font-size: 16px;
 }
 
 main {
@@ -123,23 +150,6 @@ main {
     margin: 0;
 }
 
-.invitation .container .choosing-gifts {
-    margin-top: 30px;
-}
-
-.invitation .container .choosing-gifts .colors {
-    display: flex;
-    justify-content: center;
-}
-
-.invitation .container .choosing-gifts .colors div {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background: #d4d4d4;
-    margin: 10px 5px 0;
-}
-
 .invitation .container .gifts .desc {
     margin-bottom: 10px;
 }
@@ -164,6 +174,17 @@ main {
 .container-form form .title {
     font-weight: 700;
     margin-left: 100px;
+}
+
+.container-form form .title span {
+    font-weight: 100;
+    font-size: 14px;
+}
+
+.container-form form p input[type='text'] {
+    border: 1px solid #adb5bd;
+    padding: 5px;
+    border-radius: 0.25em;
 }
 
 .container-form form p {
