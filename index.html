@@ -30,28 +30,6 @@
                 <p>15:00</p>
             </div>
         </div>
-        <div class="timer">
-            <div>
-                <span id="weeks"></span>
-                недель
-            </div>
-            <div>
-                <span id="days"></span>
-                дней
-            </div>
-            <div>
-                <span id="hours"></span>
-                часов
-            </div>
-            <div>
-                <span id="minutes"></span>
-                минут
-            </div>
-            <div>
-                <span id="seconds"></span>
-                секунд
-            </div>
-        </div>
     </header>
     <main>
         <section class="invitation">
@@ -62,12 +40,58 @@
                     <p class="date">Добро пожаловать на наш знаменательный день<br>28.09.2024</p>
                 </div>
                 <div class="img">
-                    <img src="/images/bg_.png" alt="">
+                    <img src="/images/bg1.jpg" alt="">
                     <p class="desc">Вместе мы сделаем этот день прекрасным!</p>
                 </div>
-                <div class="menu">
-                    <p class="title">Меню</p>
-                    <p class="desc">Меню разнообразно, поэтому сообщите нам заранее, если у вас есть какие-либо предпочтения или диетические ограничения</p>
+            </div>
+        </section>
+    </main>
+    <section class="schedule">
+        <div class="container">
+            <p class="title-block">Свадебное расписание</p>
+            <div class="contents">
+                <div class="date">
+                    <p>15:20<br>28.09.2024</p>
+                </div>
+                <div class="content">
+                    <p class="title">Торжественная роспись</p>
+                    <p class="desc">ЗАГС</p>
+                    <p class="text">Приглашаем вас разделить вместе с нами радость создания новой семьи.</p>
+                </div>
+            </div>
+            <div class="contents">
+                <div class="date">
+                    <p>17:00<br>28.09.2024</p>
+                </div>
+                <div class="content">
+                    <p class="title">Фуршет</p>
+                    <p class="desc">Банкетный зал "Niagara Loft"</p>
+                </div>
+            </div>
+            <div class="contents">
+                <div class="date">
+                    <p>17:30<br>28.09.2024</p>
+                </div>
+                <div class="content">
+                    <p class="title">Начало банкета</p>
+                    <p class="desc">Банкетный зал "Niagara Loft"</p>
+                    <p class="text">Именно здесь мы отметим наш незабываемый день.</p>
+                </div>
+            </div>
+            <a href="#" class="map-btn">Посмотреть на карте</a>
+            <div class="map">
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A8282d6ddf8e85614aa7b65923a4e59e40b78c1487962c4f72478ad12569fbf33&amp;width=1000&amp;height=500&amp;lang=ru_RU&amp;scroll=true"></script>
+            </div>
+        </div>
+    </section>
+    <main>
+        <section class="invitation">
+            <div class="container">
+                <div class="dess-kod">
+                    <p class="title">Дресс-код</p>
+                    <p class="desc">На нашей свадьбе ограничений по дресс-коду нет.</p>
+                    <p class="desc">Дорогие девушки, будем признательны, если в белом будет только невеста.</p>
+                    <p class="desc">Надевайте всё самое нарядное и красивое! <br>Для нас главное - ваше присутствие и хорошее настроение!</p>
                 </div>
                 <div class="gifts">
                     <p class="title">Пожелания по подаркам</p>
@@ -75,28 +99,19 @@
                     <p class="desc">Если вы хотите сделать нам комплимент, замените букет бутылочкой вина, которое мы откроем на ближайшем совместном празднике.</p>
                     <p class="desc">Если же ваше сердце жаждет преподнести именно цветы, то просим сделать выбор в пользу одной белой розы. В итоге у нас получится один роскошный букет.</p>
                 </div>
-                <div class="confirmation">
-                    <p class="title">Подтверждение</p>
-                    <p class="desc">Пожалуйста подтвердите свое присутствие до 11.08.2024</p>
-                </div>
-                <div class="dess-kod">
-                    <p class="title">Дресс-код</p>
-                    <p class="desc">На нашей свадьбе ограничений по дресс-коду нет.</p>
-                    <p class="desc">Дорогие девушки, будем признательны, если в белом будет только невеста.</p>
-                    <p class="desc">Надевайте всё самое нарядное и красивое! <br>Для нас главное - ваше присутствие и хорошее настроение!</p>
-                </div>
                 <p class="title">Ждем Вас!</p>
             </div>
         </section>
     </main>
     <section class="container-form">
-        <p class="desc">Пожалуйста, ответьте на вопросы, которые для вас подготовили Жених и Невеста</p>
+        <p class="title-form">Анкета гостя</p>
+        <p class="desc">Пожалуйста подтвердите свое присутствие до 11.08.2024</p>
         <form action="">
             <p class="title">Ваша фамилия:</p>
             <p>
                 <input type="text" name="lastname" id="lastname">
             </p>
-            <p class="title">Ваше имя: <br><span>Если вы придете со своей парой или семьей, то укажите все имена</span></p>
+            <p class="title">Ваше имя:</p>
             <p>
                 <input type="text" name="firstname" id="firstname">
             </p>
@@ -133,43 +148,36 @@
             <button class="submit" type="submit" value="Подтвердить">Подтвердить</button>
         </form>
     </section>
-    <section class="schedule">
-        <div class="container">
-            <p class="title-block">Свадебное расписание</p>
-            <div class="contents">
-                <div class="date">
-                    <p>15:20<br>28.09.2024</p>
-                </div>
-                <div class="content">
-                    <p class="title">Торжественная роспись</p>
-                    <p class="desc">ЗАГС</p>
-                    <p class="text">Приглашаем вас разделить вместе с нами радость создания новой семьи.</p>
-                </div>
+    <section class="timer-block">
+        <p class="title">До свадьбы</p>
+        <p class="desc">Осталось</p>
+        <div class="timer">
+            <div>
+                <span id="weeks"></span>
+                недель
             </div>
-            <div class="contents">
-                <div class="date">
-                    <p>17:00<br>28.09.2024</p>
-                </div>
-                <div class="content">
-                    <p class="title">Фуршет</p>
-                    <p class="desc">Банкетный зал "Niagara Loft"</p>
-                    <p class="text">Именно здесь мы отметим наш незабываемый день.</p>
-                </div>
+            <div>
+                <span id="days"></span>
+                дней
             </div>
-            <div class="contents">
-                <div class="date">
-                    <p>17:30<br>28.09.2024</p>
-                </div>
-                <div class="content">
-                    <p class="title">Начало банкета</p>
-                    <p class="desc">Банкетный зал "Niagara Loft"</p>
-                </div>
+            <div>
+                <span id="hours"></span>
+                часов
+            </div>
+            <div>
+                <span id="minutes"></span>
+                минут
+            </div>
+            <div>
+                <span id="seconds"></span>
+                секунд
             </div>
         </div>
     </section>
     <footer>
-        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A8282d6ddf8e85614aa7b65923a4e59e40b78c1487962c4f72478ad12569fbf33&amp;width=1000&amp;height=500&amp;lang=ru_RU&amp;scroll=true"></script>
-        <p class="copyright">©️2024</p>
+        <section class="thanks">
+            <p class="title">Будем рады видеть вас<br> на нашем празднике!</p>
+        </section>
     </footer>
 
     <script src="/index.js"></script>

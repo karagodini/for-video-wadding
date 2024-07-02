@@ -22,9 +22,17 @@
         // Если отсчет завершен
         if (distance < 0) {
             clearInterval(countdownInterval);
-            document.querySelector('.timer').textContent = 'Отсчет завершен';
+            document.querySelector('.timer').textContent = 'Мы поженились!';
         }
     }
 
     // Обновление каждую секунду
     const countdownInterval = setInterval(updateCountdown, 1000);
+
+const mapBtn = document.querySelector('.map-btn')
+const map = document.querySelector('.map')
+
+mapBtn.addEventListener('click', (e) => {
+    e.preventDefault()
+    map.style.display = 'block'
+})

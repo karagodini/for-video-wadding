@@ -87,21 +87,50 @@ header .date .days .year {
     font-size: 14px;
 }
 
-header .timer {
+.timer-block {
+    background: url(/images/bg_.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0px -250px;
+    text-align: center;
+    width: 610px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+}
+
+.timer-block .title {
+    font-family: Aquarelle;
+    font-size: 34px;
+    margin: 0;
+}
+
+.timer-block .desc {
+    text-transform: uppercase;
+    margin-top: 0;
+}
+
+.timer-block .timer {
     display: flex;
     justify-content: center;
 }
 
-header .timer div {
+.timer-block .timer div {
     display: flex;
     flex-direction: column;
+    align-items: center;
     font-family: Aquarelle;
     margin: 0 10px;
     font-size: 10px;
+    font-weight: 700;
 }
 
-header .timer div span {
-    font-size: 16px;
+.timer-block .timer div span {
+    font-size: 20px;
 }
 
 main {
@@ -142,6 +171,7 @@ main {
 
 .invitation .container .img img {
     width: 100%;
+    height: 650px;
 }
 
 .invitation .container .img .desc {
@@ -163,8 +193,16 @@ main {
     text-align: center;
 }
 
+.container-form .title-form {
+    font-family: Aquarelle;
+    font-size: 34px;
+    margin-bottom: 0;
+}
+
 .container-form .desc {
     font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 50px;
 }
 
 .container-form form {
@@ -283,12 +321,36 @@ main {
     width: 90%;
 }
 
-footer iframe {
-    width: 100%;
+.schedule .container .map-btn {
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+    padding: 5px 15px;
+    font-family: 'Cormorant Infant';
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
 }
 
-footer p {
-    margin: 0;
+.thanks {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.thanks .title {
+    font-family: 'Aquarelle';
+    font-size: 30px;
     text-align: center;
-    font-size: 10px;
+}
+
+.schedule .container .map {
+    display: none;
+}
+
+.schedule .container iframe {
+    width: 100%;
 }
