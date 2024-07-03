@@ -1,10 +1,10 @@
 <?php
 
 //В переменную $token нужно вставить токен, который нам прислал @botFather
-$token = "7213486174:AAHcumBKJskEYroe8QJ6uR2kRJo9ihv5uVg";
+$token = "";
 
 //Сюда вставляем chat_id
-$chat_id = "-486319246";
+$chat_id = "-";
 
 //Определяем переменные для передачи данных из нашей формы
 if ($_POST['act'] == 'order') {
