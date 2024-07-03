@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="0">
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/images/Sm.ico" type="image/x-icon">
     <title>Wedding</title>
-    <script>window.onload=function(){let e=new Date().getTime();document.querySelectorAll('a,script,link[rel="stylesheet"],img,iframe').forEach(t=>{t.href&&(t.href=t.href.split('?')[0]+'?t='+e),t.src&&(t.src=t.src.split('?')[0]+'?t='+e)})};</script>
 </head>
 <body>
     <header>
@@ -106,7 +108,7 @@
     <section class="container-form">
         <p class="title-form">Анкета гостя</p>
         <p class="desc">Пожалуйста подтвердите свое присутствие до 11.08.2024</p>
-        <form action="">
+        <form class="form" method="post" action="/send.php">
             <p class="title">Ваша фамилия:</p>
             <p>
                 <input type="text" name="lastname" id="lastname">
@@ -146,6 +148,7 @@
                 <label for="shampanskoe">Шампанское</label>
             </p>
             <button class="submit" type="submit" value="Подтвердить">Подтвердить</button>
+            <input type="hidden" name="act" value="order">
         </form>
     </section>
     <section class="timer-block">

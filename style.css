@@ -349,8 +349,33 @@ main {
 
 .schedule .container .map {
     display: none;
+    margin-top: 20px;
 }
 
 .schedule .container iframe {
     width: 100%;
+}
+
+@media (max-width: 450px) {
+    .invitation .container .img img {
+        height: 500px;
+    }
+    .schedule .container .contents .content {
+        width: 70%;
+        margin-left: 40px;
+    }
+    .schedule .container .contents .content .text {
+        width: 100%;
+        margin-left: 10px;
+    }
+    .container-form form .title {
+        margin-left: 40px;
+    }
+    .container-form form p {
+        margin-left: 70px;
+    }
+    .timer-block {
+        background-position: 0px -100px;
+        width: 100%;
+    }
 }
